@@ -237,7 +237,9 @@ target_link_libraries(bar fire-hpp::fire-hpp)
 
 ## Conan integration
 
-Fire can be packaged for consumption through Conan by running `conan create . fire-hpp/version@user/channel` from the root directory of this repository. It can then be consumed as in the `find_package()` example above if using `cmake_find_package` generator.
+Fire is on [conan-center](https://conan.io/center/). Get it for your project by adding `fire-hpp/<version>` to your project's conanfile.txt or conanfile.py, then follow the steps for linking Conan to your build system. Follow the `find_package()` example above if using CMake with the `cmake_find_package` generator.
+
+Fire can also be packaged locally for consumption through Conan by running `conan create . fire-hpp/<version>@user/channel` from the root directory of this repository.
 
 ## Development
 
